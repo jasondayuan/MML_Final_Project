@@ -104,7 +104,7 @@ class TextSelection(nn.Module):
         self.opt = opt
         assert opt.use_token_selection == 1, "ERROR: opt.use_token_selection must be 1"
         self.attn_mat = nn.Linear(opt.embed_size, opt.embed_size)
-        self.text_selection_ratio = 0.8
+        self.text_selection_ratio = opt.token_selection_ratio
     
     def forward(self, cap_emb_norm):
         # Main mission: select the most important tokens from the text
