@@ -229,7 +229,7 @@ class CrossSparseAggrNet_v2(nn.Module):
             n_word = cap_lens[i]                  
             # (L_t, C)
             cap_cls_emb = cap_embs[i, 0:1, :] # (1, C)
-            if self.use_cls_as_glob_embd:
+            if self.opt.use_cls_as_glob_embd:
                 cap_i = cap_embs[i, 1:n_word, :] # (L_t - 1, C)
             else:
                 cap_i = cap_embs[i, :n_word, :]

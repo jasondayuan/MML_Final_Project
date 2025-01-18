@@ -7,7 +7,7 @@ import logging
 from lib.encoders import get_image_encoder, get_text_encoder
 from lib.loss import loss_select
 
-from lib.cross_net import CrossSparseAggrNet_v2, CrossSparseAggrNet_v3
+from lib.cross_net import CrossSparseAggrNet_v2
 
 logger = logging.getLogger(__name__)
 
