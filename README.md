@@ -20,17 +20,17 @@ The caption files are already prepared for Flickr30K in the original repository,
 ## Training
 The training arguments are pretty much the same as the original repository, refer to ```arguments.py``` for more information. In addition to the original arguments, we added some more arguments to accommodate for the improvements we proposed, the new arguments are delimited with hashtags in ```arguments.py```:
 ```
-    ### New Arguments ###
-    # LPS
-    parser.add_argument('--use_cls_as_glob_embd', type=int, help='whether use the cls token as global embedding')
-    parser.add_argument('--use_token_selection', type=int, help='whether use the token selection')
-    parser.add_argument('--token_selection_strategy', default='ratio', type=str, help='the strategy for token selection')
-    parser.add_argument('--token_selection_ratio', default=1.0, type=float, help='the ratio for token selection')
-    # SPA
-    parser.add_argument('--similarity_calc_method', type=str, help='the method for similarity calculation')
-    parser.add_argument('--use_learnable_temp', default=0, type=int, help='whether use learnable temperature')
-    parser.add_argument('--score_threshold', default=0.7, type=float, help='the threshold for score')
-    #####################
+### New Arguments ###
+# LPS
+parser.add_argument('--use_cls_as_glob_embd', type=int, help='whether use the cls token as global embedding')
+parser.add_argument('--use_token_selection', type=int, help='whether use the token selection')
+parser.add_argument('--token_selection_strategy', default='ratio', type=str, help='the strategy for token selection')
+parser.add_argument('--token_selection_ratio', default=1.0, type=float, help='the ratio for token selection')
+# SPA
+parser.add_argument('--similarity_calc_method', type=str, help='the method for similarity calculation')
+parser.add_argument('--use_learnable_temp', default=0, type=int, help='whether use learnable temperature')
+parser.add_argument('--score_threshold', default=0.7, type=float, help='the threshold for score')
+#####################
 ```
 
 For example, the command for training the final framework in our report would be:
