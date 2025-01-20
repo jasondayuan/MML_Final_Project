@@ -15,7 +15,7 @@ pip install tensorflow
 ```
 
 ## Datasets
-The caption files are already prepared for Flickr30K in the original repository, therefore it is only needed to download the images of the Flickr30K dataset. The Flickr30K images can be down loaded from https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset. After downloading, all images should be placed under ```data/flickr30k-images```.
+The caption files are already prepared for Flickr30K in the original repository, therefore it is only needed to download the images of the Flickr30K dataset. The Flickr30K images can be down loaded from https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset. When running the training and evaluation code, all images are expected to be placed under ```data/flickr30k-images```.
 
 ## Training
 The training arguments are pretty much the same as the original repository, refer to ```arguments.py``` for more information. In addition to the original arguments, we added some more arguments to accommodate for the improvements we proposed, the new arguments are delimited with hashtags in ```arguments.py```:
@@ -62,6 +62,6 @@ python eval.py --dataset f30k --data_path data/ --gpu-id 0
 ## Checkpoints
 Below are the checkpoints for the experiments described in the report.
 
-3.1, 3.2, 3.4 and Final Framework: https://disk.pku.edu.cn/link/AA32BA9A054E8B4B979D891BB5EACCF8E4
+Retrained LAPS, 3.1, 3.2, 3.4 and Final Framework: https://disk.pku.edu.cn/link/AA32BA9A054E8B4B979D891BB5EACCF8E4
 
 3.3: https://disk.pku.edu.cn/link/AA8081F61B76954E218D6EF1870A034976
